@@ -1,0 +1,11 @@
+{
+  "insecure-registries": ["0.0.0.0/0"],
+  "live-restore": true,
+  "ipv6": false,
+  "default-address-pools": [
+    {
+      "base": "192.170.0.0/16",
+      "size": 24
+    }
+  ]
+}
