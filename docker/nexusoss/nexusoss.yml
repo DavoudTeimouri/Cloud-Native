@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  nexus:
+    image: sonatype/nexus:latest
+    container_name: nexusoss
+    restart: always
+    ports:
+      - "0.0.0.0:8081:8081"
+    environment:
+      INSTALL4J_ADD_VM_PARAMS: "-Xms1g -Xmx4g -XX:MaxDirectMemorySize=2g"
+    volumes:
+      - ./nexus-data:/nexus-data
